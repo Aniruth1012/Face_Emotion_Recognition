@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Face Emotion Detector</title>
+        <b><p style="font-size: xxx-large;text-align: center;">Face Emotion Recognition</p></b>
+        <link rel="stylesheet" href="static\style1.css">
+        <img src="static\Image\ggif1.gif" height="200px" width="250px" style="margin-top: -175px;">
+    </head>
+    <body>
+        <img src="static\Image\image1.png" alt="fdr" height="350px" width="350px" style="margin-left: 1050px;">
+        <div class="container"><p class="text" style="font-size: x-large;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana,
+         sans-serif;font-weight: 300;margin-top: -250px;">
+            Face Emotion Recognition is an advanced machine learning model incorporating <br>deep learning techniques such as CNN and Keras. 
+            Its purpose is to classify <br>facial expressions into two primary categories: happiness and sadness.<br> While the model exhibits good accuracy, 
+            occasional errors may occur.We kindly ask<br> for your understanding regarding these discrepancies and encourage you to appreciate the insightful
+            analysis of facial emotions it provides</p>
+            </div>
+            <br><br><br><br><br><br>
+            <b><p style="font-size: xx-large;">Discover your vibe: Are you riding the wave of happiness or sailing through a sea of sadness?</p></b>
+            <center><img src="static\Image\ggif3.gif" height="400px" width="500px"></center>
+            <br><br><br><br>
+        <form action="prediction" method="POST" enctype="multipart/form-data"><center>
+            <input onclick="myFunction()" style="font-size: x-large;" type="file" id="myFile" name="filename">
+            <input onclick="myFunciton()" style="font-size: x-large;" type="submit">
+        </center>
+          </form>
+
+        <script>
+        function myFunction() {
+        alert("Please provide a professionally captured image displaying 80% of the face");
+        }
+</script>
+
+<script>
+    // Scroll to the bottom of the page
+    window.onload = function() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+</script>
+          
+        <br><br>
+        <article id="prediction_text">
+            <center><h4  style="color:black;font-size: xx-large;">{{ prediction_text }}</h4></center>
+        </article>
+        <br><br>
+        <br>
+    </body>
+</html>
