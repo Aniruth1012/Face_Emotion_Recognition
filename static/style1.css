@@ -1,0 +1,42 @@
+body{
+    background: linear-gradient(to right, #EA8D8D,#A890FE);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+  }
+
+  .link {
+    padding: 10px;
+  }
+  
+  .container{
+    width: 100%;
+  }
+  
+  .text{
+    font-family: 'arial black';
+    font-size: 60px;
+    padding: 0;
+    margin: 0;
+    margin-left: 34%;
+    transform: translateX(-200%);
+    opacity: 0;
+    animation: slide-in-anim 1.5s ease-out forwards;
+  }
+  
+  @keyframes slide-in-anim {
+    20% {
+      opacity: 0;
+    }
+    60% {
+      transform: translateX(-45%);
+    }
+    75% {
+      transform: translateX(-52%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(-50%);
+    }
+  }
